@@ -13,7 +13,7 @@ export default class App extends React.Component {
       <Router>
         <Stack key="root">
           <Scene key="home" component={Home} title="NY Times" initial={true} />
-          <Scene key="book" component={Book} title="Book Detail" />
+          <Scene key="book" component={Book}/>
         </Stack>
       </Router>
      

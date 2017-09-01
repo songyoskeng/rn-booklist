@@ -4,7 +4,7 @@ import { Actions } from 'react-native-router-flux';
 class BookDetail extends React.Component {
   render() {
     return (
-        <TouchableOpacity onPress={()=> Actions.book({information: this.props.information})} style={styles.row}>
+        <TouchableOpacity onPress={()=> Actions.book({title:"Rank #"+this.props.rank, information: this.props.information})} style={styles.row}>
             <View style={{flex:2,flexDirection:'row',alignItems:'center'}}>
              
                 <Image style={styles.img} source={{uri: this.props.book_image}} />
